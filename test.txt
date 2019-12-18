@@ -1,3 +1,0 @@
-2019-12-18解决合并分支冲突问题,需要合并到master
-version1
-version2
