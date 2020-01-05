@@ -1,0 +1,20 @@
+server:
+  port: 8888 #端口号
+
+logging:
+  path: logs #运行结束会在同级目录下生成logs文件夹
+  file: mylog.log #文件夹下的日志文件
+
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xdclass?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/* #映射mapper文件夹

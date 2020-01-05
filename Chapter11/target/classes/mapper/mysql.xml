@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">
+    <select id="getEmployeeCount" resultType="Integer">
+      SELECT COUNT(*)FROM employee;
+    </select>
+
+    <insert id="addEmployee" parameterType="com.course.model.Employee">
+        INSERT INTO employee(empno, ename, job, mgr, hiredate, sal, deptnu)
+        VALUES (#{empno}, #{ename}, #{job}, #{mgr}, #{hiredate}, #{sal}, #{deptnu})
+    </insert>
+
+    <update id="updateEmployee" parameterType="com.course.model.Employee">
+        UPDATE employee SET ename=#{ename}, job=#{job}, sal=#{sal}
+        WHERE empno=#{empno}
+    </update>
+
+    <delete id="deleteEmployee" parameterType="Integer">
+        DELETE FROM employee WHERE empno=#{empno}
+    </delete>
+
+</mapper>

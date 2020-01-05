@@ -1,0 +1,2 @@
+java -jar ./moco-runner-1.0.0-standalone.jar http -p 8888 -c userManager.json
+java -jar -Dfile.encoding=UTF-8 ./moco-runner-1.0.0-standalone.jar http -p 8888 -c userManager.json

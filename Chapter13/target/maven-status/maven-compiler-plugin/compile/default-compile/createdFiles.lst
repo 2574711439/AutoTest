@@ -1,0 +1,10 @@
+com\course\model\GetUserListCase.class
+com\course\model\InterfaceName.class
+com\course\model\GetUserInfoCase.class
+com\course\Application.class
+com\course\controller\UserManager.class
+com\course\model\UpdateUserInfoCase.class
+com\course\model\LoginCase.class
+com\course\config\SwaggerConfig.class
+com\course\model\AddUserCase.class
+com\course\model\User.class

@@ -1,0 +1,22 @@
+[
+  {
+    "description":"这是 一个带header的请求",
+    "request":{
+      "uri":"/headerdemo",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"lily",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "json":{
+        "lily":"success",
+        "status":"1"
+      }
+    }
+  }
+]
